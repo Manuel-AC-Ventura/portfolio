@@ -1,0 +1,341 @@
+@import url(../font/stylesheet.css);
+*{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	color: #ffffff;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: 'League Spartan';
+}
+body{
+	display: flex;
+	flex-direction: column;
+	background: #15161c;
+}
+body::-webkit-scrollbar{
+	width: 8px;
+	background:#15161c;
+}
+body::-webkit-scrollbar-thumb{
+	border-radius: 3px;
+	background: #1c1d25;
+}
+header{
+	width: 100%;
+	height: 80px;
+	background: #1c1d25;
+}
+header nav{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	padding: 0px 90px;
+	align-items: center;
+	justify-content: space-between;
+}
+header nav h1{
+	font-size: 20pt;
+}
+header nav .fa-bars{
+	display: none;
+}
+header nav ul{
+	gap: 2rem;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+header nav ul li{
+	color: #b0b2c3;
+	cursor: pointer;
+	border-bottom: 0px solid #b0b2c3;
+	transition: 500ms all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+header nav ul li:hover:not(:nth-child(4)){
+	padding-bottom: 10px;
+	border-bottom: 4px solid #ffffff;
+}
+header nav ul li a{
+	color: #b0b2c3;
+	transition: 500ms all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+header nav ul li:hover > a{
+	color: #ffffff;
+}
+header nav ul.menu ul.socials{
+	display: none;
+}
+main{
+	gap: 3rem;
+	width: 100%;
+	display: grid;
+	padding: 50px 90px 30px 90px;
+}
+main aside{
+	top: 35%;
+	right: 0;
+	width: 60px;
+	position: fixed;
+	text-align: center;
+	justify-content: center;
+}
+main aside ul{
+	gap: 2rem;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+main aside ul li{
+	opacity: 0.7;
+	cursor: pointer;
+	transition: 500ms all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+main aside ul li:hover{
+	opacity: 1;
+}
+main section{
+	gap: 2rem;
+	display: flex;
+	min-height: 350px;
+	flex-direction: column;
+}
+main section h1{
+	font-size: 25pt;
+}
+main section article{
+	width: 86%;
+}
+main section article p{
+	font-size: 16pt;
+	font-family: sans-serif;
+}
+main section div.container{
+	gap: 1.5rem;
+	width: 100%;
+	display: grid;
+	flex-direction: row;
+	justify-content: center;
+	grid-template-columns: repeat(3, 2fr);
+}
+main section div.container article.card{
+	gap: 1rem;
+	width: 100%;
+	display: flex;
+	min-height: 280px;
+	padding: 25px 20px;
+	border-radius: 5px;
+	text-align: justify;
+	background: #1c1d25;
+	flex-direction: column;
+	justify-content: space-between;
+}
+main section div.container article.card h3{
+	text-align: left;
+	background: #1c1d25;
+}
+main section div.container article.card p{
+	font-size: 13pt;
+	background: #1c1d25;
+	font-family: 'Segoe UI', Tahoma, Geneva;
+}
+main section div.container article.card div.btn{
+	font-size: 10pt;
+}
+main section div.container article.card div.btn a{
+	color: #c8c9cb;
+	/* color: #9d9ea9; */
+	background: #1c1d25;
+}
+main section div.container article.card div.btn a:hover{
+	color: #4b4c52;
+	/* color: #414356; */
+}
+main section article.stacks{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+main section ul.stacks{
+	display: grid;
+	gap: 2rem;
+	padding: 0px 30px;
+	text-align: center;
+	grid-template-columns: repeat(3, 2fr);
+}
+main section ul.stacks li{
+	gap: 1rem;
+	display: grid;
+}
+main section ul.stacks li::before,
+main section ul.stacks li::after{
+	opacity: 0;
+	width: 100%;
+	height: 35px;
+	line-height: 40px;
+	border-radius: 3px;
+	background: #1c1d25;
+	transition: 1.5s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	/* transition: 500ms all cubic-bezier(0.445, 0.05, 0.55, 0.95); */
+}
+main section ul.stacks li:nth-child(1)::before{
+	content: 'HTML';
+}
+main section ul.stacks li:nth-child(2)::before{
+	content: 'CSS';
+}
+main section ul.stacks li:nth-child(3)::before{
+	content: 'Javascript';
+}
+main section ul.stacks li:nth-child(4)::after{
+	content: 'NodeJS';
+}
+main section ul.stacks li:nth-child(5)::after{
+	content: 'Bootstrap';
+}
+main section ul.stacks li:nth-child(6)::after{
+	content: 'PHP';
+}
+main section ul.stacks li .fa-4x{
+	height: 150px;
+	cursor: pointer;
+	line-height: 150px;
+	border-radius: 5px;
+	background: #1c1d25;
+}
+main section ul.stacks li:has(.fa-4x:hover)::before,
+main section ul.stacks li:has(.fa-4x:hover)::after{
+	opacity: 1;
+}
+footer{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	background: #1c1d25;
+}
+footer p{
+	opacity: .8;
+	font-size: 12pt;
+	cursor: pointer;
+	font-style: italic;
+	font-family: sans-serif;
+}
+
+
+
+
+@media screen and (max-width: 1024px){	
+	main section div.container,
+	main section article.stacks{
+		grid-template-columns: repeat(2, 2fr);
+	}
+	main section article ul.stacks{
+		grid-template-columns: repeat(2, 2fr);
+	}
+	main section article ul.stacks li:before,
+	main section article ul.stacks li:after{
+		display: none;
+	}
+}
+@media screen and (max-width: 834px){
+	header nav{
+		padding: 0px 60px;
+	}
+	main{
+		padding: 50px 60px;
+	}
+	main section#about article{
+		width: 100%;
+	}
+	main section div.container,
+	main section article.stacks{
+		grid-template-columns: repeat(2, 2fr);
+	}main section article.stacks{
+		grid-template-columns: repeat(1, 2fr);
+	}
+	main section article.stacks{
+		gap: 1rem;
+		display: grid;
+	}
+	main section article.stacks ul{
+		padding: 0px;
+	}
+}
+@media screen and (max-width: 428px){
+	header nav{
+		padding: 0px 25px;
+	}
+	header nav .fa-bars{
+		display: block;
+	}
+	header nav .mobile{
+		right: 0;
+		top: 80px;
+		width: 70%;
+		gap: 1.5rem;
+		display: flex;
+		padding: 50px 30px;
+		position: absolute;
+		background: #1c1d25;
+		flex-direction: column;
+		transition: 500ms ease-in-out;
+		animation: menu 500ms ease-in-out;
+	}
+	header nav .mobile li{
+		height: 30px;
+		width: 100%;
+	}
+	header nav .mobile li:hover:not(:last-child){
+		padding: 0px;
+		border: none;
+	}
+	@keyframes menu {
+		from{
+			width: 0%;
+			right: -50px;
+		}to{
+			width: 70%;
+		}
+	}
+	header nav ul{
+		display: none;
+	}
+	header nav ul.menu ul.socials{
+		gap: 1rem;
+		width: 100%;
+		height: 50px;
+		display: flex;
+	}
+	main{
+		padding: 50px 20px;
+	}
+	main aside{
+		display: none;
+	}
+	main section{
+		width: 100%;
+	}
+	main section article{
+		width: 100%;
+		text-align: justify;
+	}
+	main section div.container,
+	main section article.stacks{
+		grid-template-columns: repeat(1, 2fr);
+	}
+	main section article.stacks{
+		gap: 2rem;
+	}
+	main section ul.stacks{
+		gap: 1.5rem;
+		padding: 0px;
+		grid-template-columns: repeat(2, 2fr);
+	}
+	main section ul.stacks li::before,
+	main section ul.stacks li::after{
+		display: none;
+	}
+}
