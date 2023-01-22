@@ -1,8 +1,6 @@
 :root{
-	/* 0e0e10 */
-	--dark: #040405;
-	--light: #ffffff;
-	--indigo: #772ce8;
-	--light-dark: #0e0e10;
-	--dark-gray: #101013;
+	--gray: #b0b2c3;
+	--blue: #1c1d25;
+	--light: #ffffffff;
+	--darkblue: #15161c;
 }
