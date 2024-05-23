@@ -82,7 +82,7 @@ export const Skills = ()=>{
         </div>
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
           {skills.map((skill, index) => (
-            <div key={index} className={`flex flex-col items-center justify-center space-y-2 rounded-md p-4 shadow-sm transition-colors ${theme === 'dark' ? 'bg-gray-950 hover:bg-gray-800' : 'bg-white hover:bg-gray-100'}`}>
+            <div key={index} className={`flex flex-col cursor-pointer items-center justify-center space-y-2 rounded-md p-4 shadow-sm transition-colors ${theme === 'dark' ? 'bg-gray-950 hover:bg-gray-800' : 'bg-white hover:bg-gray-100'}`}>
               {React.cloneElement(skill.icon, { className: `${theme === 'dark' ? 'text-white' : 'text-gray-900'}` })}
               <span className={`text-sm font-medium ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>{skill.name}</span>
             </div>
