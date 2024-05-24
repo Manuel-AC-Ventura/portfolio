@@ -4,7 +4,7 @@ export const Projects = ()=>{
   const { theme } = useTheme();
   
   return(
-    <section className={`w-full py-12 md:py-24 lg:py-32 ${theme === 'dark' ? 'bg-gray-800' : 'bg-gray-100'}`}>
+    <section id="Projects" className={`w-full py-12 md:py-24 lg:py-32 ${theme === 'dark' ? 'bg-gray-800' : 'bg-gray-100'}`}>
       <div className="container space-y-12 px-4 md:px-6">
         <div className={`flex flex-col items-center justify-center space-y-4 text-center ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
           <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">My Projects</h2>

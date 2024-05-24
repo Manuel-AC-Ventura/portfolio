@@ -71,7 +71,7 @@ export const Skills = ()=>{
   ]
 
   return(
-    <section className={`w-full py-12 md:py-24 lg:py-32 ${theme === 'dark' ? 'bg-gray-800' : 'bg-gray-100'}`}>
+    <section id="Skills" className={`w-full py-12 md:py-24 lg:py-32 ${theme === 'dark' ? 'bg-gray-800' : 'bg-gray-100'}`}>
       <div className="container grid items-center justify-center gap-6 px-4 md:px-6">
         <div className="space-y-4 text-center">
           <h2 className={`text-3xl font-bold tracking-tighter md:text-4xl ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>My Skills</h2>
