@@ -13,8 +13,7 @@ export const Home = () => {
           <h1 className={`text-4xl font-bold tracking-tighter md:text-5xl lg:text-6xl ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>Manuel Ventura</h1>
           <h2 className={`text-2xl font-semibold ${theme === 'dark' ? 'text-gray-400' : 'text-gray-700'}`}>Full-Stack Developer</h2>
           <p className={`max-w-[600px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed ${theme === 'dark' ? 'text-gray-400' : 'text-gray-700'}`}>
-            I am a passionate full-stack developer with expertise in building modern web applications. I love creating
-            innovative solutions that solve real-world problems.
+            Sou um desenvolvedor full-stack apaixonado, com experiência na construção de aplicações web modernas. Adoro criar soluções inovadoras que resolvam problemas do mundo real.
           </p>
           <div className="flex gap-4">
             <button className={`flex items-center space-x-2 justify-center whitespace-nowrap text-sm font-medium transition-colors focus:outline-none h-11 rounded-md px-8 ${theme === 'dark' ? 'bg-white text-black hover:bg-gray-200' : 'bg-black text-white hover:bg-neutral-900'}`}>
