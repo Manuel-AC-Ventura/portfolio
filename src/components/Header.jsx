@@ -6,7 +6,7 @@ import { Root, Thumb } from '@radix-ui/react-switch';
 export const Header = () => {
   const { theme, toggleTheme } = useTheme();
   const [isDarkMode, setIsDarkMode] = useState(false);
-  const links = ["Home", "About", "Skills", "Projects", "Contact"];
+  const links = ["Home", "Sobre", "Skills", "Projectos", "Contacto"];
 
   useEffect(() => {
     setIsDarkMode(theme === 'dark');
