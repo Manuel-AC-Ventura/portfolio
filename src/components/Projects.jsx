@@ -1,9 +1,18 @@
+import { useState, useEffect } from "react";
 import { useTheme } from "@/context/themeContext";
 
-export const Projects = ()=>{
+export const Projects = () => {
   const { theme } = useTheme();
-  
-  return(
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    fetch('/projects.json')
+      .then(response => response.json())
+      .then(data => setProjects(data.projects))
+      .catch(err => console.error(err));
+  }, []);
+
+  return (
     <section id="Projects" className={`w-full py-12 md:py-24 lg:py-32 ${theme === 'dark' ? 'bg-gray-800' : 'bg-gray-100'}`}>
       <div className="container space-y-12 px-4 md:px-6">
         <div className={`flex flex-col items-center justify-center space-y-4 text-center ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
@@ -14,23 +23,24 @@ export const Projects = ()=>{
         </div>
         
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          {Array.from({ length: 8 }).map((_, idx) => (
+          {projects.map((project, index) => (
             <a 
-              key={idx+1}
-              href=""
+              key={index}
+              target="_blank"
+              href={project.url}
               className={`group relative overflow-hidden rounded-lg shadow-sm transition-all hover:scale-105 hover:shadow-md ${theme === 'dark' ? 'bg-gray-950' : 'bg-white'}`}
             >
               <img
                 alt="Project 1"
                 className="aspect-video w-full object-cover object-center"
                 height={300}
-                src="/placeholder.svg"
+                src={project.cover}
                 width={400}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent group-hover:from-gray-900/90" />
               <div className="absolute inset-0 flex flex-col items-start justify-end p-4 text-white">
-                <h3 className="text-lg font-semibold">Project {idx+1}</h3>
-                <p className="text-sm line-clamp-2">A brief description of Project {idx+1}.</p>
+                <h3 className="text-lg font-semibold">{project.name}</h3>
+                <p className="text-sm line-clamp-2">{project.description}</p>
               </div>
             </a>
           ))}

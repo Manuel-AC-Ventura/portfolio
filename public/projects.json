@@ -1,0 +1,52 @@
+{
+  "projects": [
+    {
+      "name": "TaskForge",
+      "cover": "./projects/TaskForge.png",
+      "description": "This is project 1",
+      "url": "https://github.com/Manuel-AC-Ventura/TaskForge"
+    },
+    {
+      "name": "Cinemate",
+      "cover": "./projects/Cinemate.png",
+      "description": "This is project 2",
+      "url": "https://github.com/Manuel-AC-Ventura/Cinemate"
+    },
+    {
+      "name": "Pass-In",
+      "cover": "./projects/Pass-In.png",
+      "description": "This is project 3",
+      "url": "https://github.com/Manuel-AC-Ventura/pass-in-web"
+    },
+    {
+      "name": "AngolaHolidayAPI",
+      "cover": "placeholder.svg",
+      "description": "This is project 4",
+      "url": "https://github.com/Manuel-AC-Ventura/AngolaHolidayAPI"
+    },
+    {
+      "name": "IPIZ",
+      "cover": "./projects/IPIZ.png",
+      "description": "This is project 5",
+      "url": "https://github.com/Manuel-AC-Ventura/IPIZ"
+    },
+    {
+      "name": "Project 6",
+      "cover": "placeholder.svg",
+      "description": "This is project 6",
+      "url": "https://example.com/project6"
+    },
+    {
+      "name": "Project 7",
+      "cover": "placeholder.svg",
+      "description": "This is project 7",
+      "url": "https://example.com/project7"
+    },
+    {
+      "name": "Project 8",
+      "cover": "placeholder.svg",
+      "description": "This is project 8",
+      "url": "https://example.com/project8"
+    }
+  ]
+}
