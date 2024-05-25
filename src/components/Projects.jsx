@@ -13,12 +13,12 @@ export const Projects = () => {
   }, []);
 
   return (
-    <section id="Projects" className={`w-full py-12 md:py-24 lg:py-32 ${theme === 'dark' ? 'bg-gray-800' : 'bg-gray-100'}`}>
+    <section id="Projectos" className={`w-full py-12 md:py-24 lg:py-32 ${theme === 'dark' ? 'bg-gray-800' : 'bg-gray-100'}`}>
       <div className="container space-y-12 px-4 md:px-6">
         <div className={`flex flex-col items-center justify-center space-y-4 text-center ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>
           <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">My Projects</h2>
           <p className={`max-w-[600px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'}`}>
-            Here are some of the projects I've worked on recently. You can see more on my GitHub profile.
+            Aqui estão alguns dos projetos em que trabalhei recentemente. Você pode ver mais em meu perfil do GitHub.
           </p>
         </div>
         

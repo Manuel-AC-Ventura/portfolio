@@ -76,8 +76,7 @@ export const Skills = ()=>{
         <div className="space-y-4 text-center">
           <h2 className={`text-3xl font-bold tracking-tighter md:text-4xl ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>My Skills</h2>
           <p className={`max-w-[600px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'}`}>
-            I am proficient in a wide range of technologies and tools that help me deliver high-quality web
-            applications.
+            Tenho proficiência em uma ampla gama de tecnologias e ferramentas que me ajudam a fornecer aplicações web de alta qualidade.
           </p>
         </div>
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
