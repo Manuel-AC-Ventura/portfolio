@@ -37,7 +37,7 @@ export const Home = () => {
           alt="John Doe"
           className="mx-auto aspect-square overflow-hidden rounded-full object-cover"
           height={400}
-          src="./I.png"
+          src={theme === 'light' ? './dark.png' : './light.png'}
           width={400}
         />
         
