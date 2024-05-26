@@ -3,37 +3,37 @@
     {
       "name": "TaskForge",
       "cover": "./projects/TaskForge.png",
-      "description": "This is project 1",
+      "description": "Gestor de tarefas",
       "url": "https://github.com/Manuel-AC-Ventura/TaskForge"
     },
     {
       "name": "Cinemate",
       "cover": "./projects/Cinemate.png",
-      "description": "This is project 2",
+      "description": "Aplicação de compra de bilhetes de cinema",
       "url": "https://github.com/Manuel-AC-Ventura/Cinemate"
     },
     {
       "name": "Pass-In",
       "cover": "./projects/Pass-In.png",
-      "description": "This is project 3",
+      "description": "Aplicação de gestão de eventos",
       "url": "https://github.com/Manuel-AC-Ventura/pass-in-web"
     },
     {
       "name": "AngolaHolidayAPI",
       "cover": "placeholder.svg",
-      "description": "This is project 4",
+      "description": "API de feriados em Angola",
       "url": "https://github.com/Manuel-AC-Ventura/AngolaHolidayAPI"
     },
     {
       "name": "IPIZ",
       "cover": "./projects/IPIZ.png",
-      "description": "This is project 5",
+      "description": "Sistema de gestão escolar",
       "url": "https://github.com/Manuel-AC-Ventura/IPIZ"
     },
     {
       "name": "Rest Countries API",
       "cover": "./projects/rest-countries-api.png",
-      "description": "This is project 6",
+      "description": "API de países do mundo",
       "url": "https://github.com/DevStartGame/rest-countries-api"
     },
     {
