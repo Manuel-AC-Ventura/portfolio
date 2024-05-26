@@ -31,10 +31,10 @@
       "url": "https://github.com/Manuel-AC-Ventura/IPIZ"
     },
     {
-      "name": "Project 6",
-      "cover": "placeholder.svg",
+      "name": "Rest Countries API",
+      "cover": "./projects/rest-countries-api.png",
       "description": "This is project 6",
-      "url": "https://example.com/project6"
+      "url": "https://github.com/DevStartGame/rest-countries-api"
     },
     {
       "name": "Project 7",
