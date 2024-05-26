@@ -34,10 +34,10 @@ export const Home = () => {
           </div>
         </div>
         <img
-          alt="John Doe"
+          alt="Manuel Ventura"
           className="mx-auto aspect-square overflow-hidden rounded-full object-cover"
           height={400}
-          src={theme === 'light' ? './dark.png' : './light.png'}
+          src={theme === 'light' ? '/dark.png' : '/light.png'}
           width={400}
         />
         
