@@ -37,7 +37,7 @@ export const Home = () => {
           alt="John Doe"
           className="mx-auto aspect-square overflow-hidden rounded-full object-cover"
           height={400}
-          src="./placeholder.svg"
+          src="./I.png"
           width={400}
         />
         
