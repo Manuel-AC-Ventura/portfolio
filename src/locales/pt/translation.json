@@ -1,0 +1,34 @@
+{
+  "home": "Início",
+  "about": "Sobre",
+  "skills": "Habilidades",
+  "projects": "Projetos",
+  "contact": "Contato",
+  "welcome_message": "Bem-vindo ao meu portfólio",
+
+  "home_title": "Manuel Ventura",
+  "home_subtitle": "Desenvolvedor Full-Stack",
+  "home_description": "Sou um desenvolvedor full-stack apaixonado, com experiência na construção de aplicações web modernas. Adoro criar soluções inovadoras que resolvam problemas do mundo real.",
+  "download_resume": "Baixar Currículo",
+
+  "about_title": "Sobre Mim",
+  "about_description": "Sou um desenvolvedor full-stack com mais de 5 anos de experiência na indústria. Tenho sólida experiência em PHP, Laravel, JavaScript, React, Node.js e várias outras tecnologias. Sou apaixonado por criar aplicações web escaláveis e fáceis de usar que resolvam problemas do mundo real.",
+
+  "skills_title": "Minhas Habilidades",
+  "skills_description": "Tenho proficiência em uma ampla gama de tecnologias e ferramentas que me ajudam a fornecer aplicações web de alta qualidade.",
+
+  "projects_title": "Meus Projetos",
+  "projects_description": "Aqui estão alguns dos projetos em que trabalhei recentemente. Você pode ver mais em meu perfil do GitHub.",
+
+  "footer": {
+    "contact_title": "Entrar em contato",
+    "contact_description": "Adoraria ouvir de você! Sinta-se à vontade para entrar em contato com qualquer dúvida ou pergunta.",
+    "name_label": "Nome",
+    "email_label": "Email",
+    "message_label": "Mensagem",
+    "send_message_button": "Enviar Mensagem",
+    "name_placeholder": "João Silva",
+    "email_placeholder": "joao@exemplo.com",
+    "message_placeholder": "Sua mensagem..."
+  }
+}
