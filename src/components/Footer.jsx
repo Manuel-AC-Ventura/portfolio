@@ -1,9 +1,44 @@
+import { Resend } from "resend";
 import { useTheme } from "@/context/themeContext";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 
 export const Footer = () => {
   const { theme } = useTheme();
   const { t } = useTranslation();
+  const resend = new Resend();
+  const resendkey = process.env.RESEND_KEY;
+  const myEmail = process.env.My_EMAIL;
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
+
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [id]: value
+    }));
+  };
+
+  const sendEmail = async (e) => {
+    e.preventDefault();
+    try {
+      await resend.emails.send({
+        from: resendkey,
+        to: myEmail,
+        subject: `Message from ${formData.name}`,
+        text: formData.message,
+      });
+      alert("Email sent successfully!");
+    } catch (error) {
+      console.error("Error sending email:", error);
+      alert("Failed to send email.");
+    }
+  };
 
   return (
     <section
@@ -23,7 +58,7 @@ export const Footer = () => {
             {t("footer.contact_description")}
           </p>
         </div>
-        <form className="space-y-4">
+        <form className="space-y-4" onSubmit={sendEmail}>
           <div className="space-y-2">
             <label
               className={`text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 ${theme === "dark" ? "text-white" : "text-gray-900"}`}
@@ -35,6 +70,8 @@ export const Footer = () => {
               className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
               id="name"
               placeholder={t("footer.name_placeholder")}
+              value={formData.name}
+              onChange={handleChange}
             />
           </div>
           <div className="space-y-2">
@@ -49,6 +86,8 @@ export const Footer = () => {
               id="email"
               placeholder={t("footer.email_placeholder")}
               type="email"
+              value={formData.email}
+              onChange={handleChange}
             />
           </div>
           <div className="space-y-2">
@@ -63,6 +102,8 @@ export const Footer = () => {
               id="message"
               placeholder={t("footer.message_placeholder")}
               rows="5"
+              value={formData.message}
+              onChange={handleChange}
             />
           </div>
           <button
