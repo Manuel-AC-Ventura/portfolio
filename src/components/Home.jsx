@@ -7,11 +7,16 @@ import { FiLinkedin, FiTwitter, FiDownload } from "react-icons/fi";
 export const Home = () => {
   const { theme } = useTheme();
   const { t } = useTranslation();
+  const socials = [
+    { name: "LinkedIn", icon: <FiLinkedin size={28} /> },
+    { name: "GitHub", icon: <RiGithubLine size={28} /> },
+    { name: "Twitter", icon: <FiTwitter size={28} /> },
+  ]
 
   return (
     <section
       id="Home"
-      className={`w-full py-12 md:py-24 lg:py-32 ${theme === "dark" ? "bg-gray-800" : "bg-gray-100"}`}
+      className={`w-full py-12 md:py-24 lg:py-32 ${theme === "dark" ? "bg-black" : "bg-gray-100"}`}
     >
       <div className="container grid items-center justify-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
         <div className="space-y-4">
@@ -38,24 +43,15 @@ export const Home = () => {
               <span>{t("download_resume")}</span>
             </button>
             <div className="flex items-center gap-4">
-              <a
-                className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
-                href="#"
-              >
-                <FiLinkedin size={28} />
-              </a>
-              <a
-                className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
-                href="#"
-              >
-                <RiGithubLine size={28} />
-              </a>
-              <a
-                className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
-                href="#"
-              >
-                <FiTwitter size={28} />
-              </a>
+              {socials.map((social, index) => (
+                <a
+                  href="#"
+                  key={index}
+                  className={`text-lg transition-al ${theme === "dark" ? "text-white hover:text-gray-400 " : "text-gray-900 hover:text-gray-600"}`}
+                >
+                  {social.icon}
+                </a>
+              ))}
             </div>
           </div>
         </div>

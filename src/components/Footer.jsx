@@ -8,7 +8,7 @@ export const Footer = () => {
   return (
     <section
       id="Contact"
-      className={`w-full py-12 md:py-24 lg:py-32 ${theme === "dark" ? "bg-gray-800" : "bg-gray-100"}`}
+      className={`w-full py-12 md:py-24 lg:py-32 ${theme === "dark" ? "bg-black" : "bg-gray-100"}`}
     >
       <div className="container grid items-center justify-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
         <div className="space-y-4">

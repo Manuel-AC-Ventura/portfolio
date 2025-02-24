@@ -17,7 +17,7 @@ export const Projects = () => {
   return (
     <section
       id="Projectos"
-      className={`w-full py-12 md:py-24 lg:py-32 ${theme === "dark" ? "bg-gray-800" : "bg-gray-100"}`}
+      className={`w-full py-12 md:py-24 lg:py-32 ${theme === "dark" ? "bg-black" : "bg-gray-100"}`}
     >
       <div className="container space-y-12 px-4 md:px-6">
         <div

@@ -25,7 +25,7 @@ export const Header = () => {
 
   return (
     <header
-      className={`w-full py-4 px-4 md:px-6 flex items-center justify-between ${theme === "dark" ? "bg-gray-800" : "bg-gray-100"}`}
+      className={`w-full py-4 px-4 md:px-6 flex items-center justify-between ${theme === "dark" ? "bg-black" : "bg-gray-100"}`}
     >
       <div className="flex items-center space-x-4">
         <a

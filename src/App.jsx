@@ -1,10 +1,10 @@
 import { Home } from "@/components/Home";
 import { Header } from "@/components/Header";
 import { Skills } from "@/components/Skills";
-import { Projects } from "@/components/Projects";
 import { Footer } from "@/components/Footer";
-import { TranslationProvider } from "./context/translationContext";
+import { Projects } from "@/components/Projects";
 import { ThemeProvider } from "@/context/themeContext";
+import { TranslationProvider } from "./context/translationContext";
 
 export const App = () => {
   return (
