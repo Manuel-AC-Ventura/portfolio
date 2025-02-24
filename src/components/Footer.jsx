@@ -6,9 +6,9 @@ import { useState } from "react";
 export const Footer = () => {
   const { theme } = useTheme();
   const { t } = useTranslation();
-  const resend = new Resend();
   const resendkey = process.env.RESEND_KEY;
   const myEmail = process.env.My_EMAIL;
+  const resend = new Resend(resendkey);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -28,7 +28,7 @@ export const Footer = () => {
     e.preventDefault();
     try {
       await resend.emails.send({
-        from: resendkey,
+        from: myEmail,
         to: myEmail,
         subject: `Message from ${formData.name}`,
         text: formData.message,
@@ -85,7 +85,6 @@ export const Footer = () => {
               className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
               id="email"
               placeholder={t("footer.email_placeholder")}
-              type="email"
               value={formData.email}
               onChange={handleChange}
             />
@@ -98,19 +97,18 @@ export const Footer = () => {
               {t("footer.message_label")}
             </label>
             <textarea
-              className="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+              className="flex h-24 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
               id="message"
               placeholder={t("footer.message_placeholder")}
-              rows="5"
               value={formData.message}
               onChange={handleChange}
             />
           </div>
           <button
-            className={`inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus:outline-none h-10 px-4 py-2 w-full ${theme === "dark" ? "bg-white text-black hover:bg-gray-200" : "bg-black text-white hover:bg-neutral-900"}`}
             type="submit"
+            className={`w-full rounded-md bg-primary px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2`}
           >
-            {t("footer.send_message_button")}
+            {t("footer.send_button")}
           </button>
         </form>
       </div>
