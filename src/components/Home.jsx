@@ -59,7 +59,7 @@ export const Home = () => {
           alt="Manuel Ventura"
           className="mx-auto aspect-square overflow-hidden rounded-full object-cover"
           height={400}
-          src={theme === "light" ? "/dark.png" : "/light.png"}
+          src={theme === "light" ? "/dark.webp" : "/light.webp"}
           width={400}
         />
 
