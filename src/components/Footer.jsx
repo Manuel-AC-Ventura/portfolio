@@ -1,11 +1,11 @@
 import { useTheme } from "@/context/themeContext";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 
 export const Footer = () => {
   const { theme } = useTheme();
   const { t } = useTranslation();
   
-
   return (
     <section
       id="Contact"
@@ -66,9 +66,9 @@ export const Footer = () => {
           </div>
           <button
             type="submit"
-            className={`w-full rounded-md bg-primary px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2`}
+            className={`w-full rounded-md px-4 py-2 text-sm font-medium ${theme === "dark" ? "bg-white" : "bg-black text-white"} transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2`}
           >
-            {t("footer.send_button")}
+            {t("footer.send_message_button")}
           </button>
         </form>
       </div>
