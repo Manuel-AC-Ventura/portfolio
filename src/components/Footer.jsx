@@ -1,4 +1,3 @@
-import { Resend } from "resend";
 import { useTheme } from "@/context/themeContext";
 import { useTranslation } from "react-i18next";
 
