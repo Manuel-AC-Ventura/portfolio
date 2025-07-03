@@ -4,7 +4,7 @@ import { useLanguage } from "../context/languageContext";
 
 export const Experience = () => {
   const { theme } = useTheme();
-  const { language } = useLanguage();
+  useLanguage(); // Force re-render on language change
 
   const experiences = [
     {

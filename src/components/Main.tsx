@@ -5,7 +5,7 @@ import { Projects } from "./Projects";
 import { useTheme } from "../hooks/useTheme";
 import { useLanguage } from "../context/languageContext";
 import { Footer } from "./Footer";
-import { Experience } from "./Experience";
+// import { Experience } from "./Experience";
 
 export const Main = () => {
   useLanguage();
