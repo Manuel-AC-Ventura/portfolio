@@ -1,11 +1,12 @@
 import { About } from "./About";
 import { Header } from "./Header";
 import { Skills } from "./Skills";
+import { Footer } from "./Footer";
 import { Projects } from "./Projects";
 import { useTheme } from "../hooks/useTheme";
-import { useLanguage } from "../context/languageContext";
-import { Footer } from "./Footer";
 // import { Experience } from "./Experience";
+import { useLanguage } from "../context/languageContext";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 export const Main = () => {
   useLanguage();
@@ -19,6 +20,7 @@ export const Main = () => {
 			<Header />
 			<About />
 			<Skills />
+			<SpeedInsights/>
 			{ /* <Experience /> */ }
 			<Projects />
 			<Footer />
