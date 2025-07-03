@@ -1,0 +1,86 @@
+{
+  "home": "Home",
+  "about": "About",
+  "skills": "Skills",
+  "projects": "Projects",
+  "contact": "Contact",
+  "welcome_message": "Welcome to my professional portfolio",
+
+  "home_title": "Manuel Ventura",
+  "home_subtitle": "Full-Stack Developer",
+  "home_description": "Full-stack developer experienced in modern web applications, focused on delivering innovative and efficient solutions to real-world challenges.",
+  "download_resume": "Download Resume",
+
+  "about_title": "About Me",
+  "about_description": "I am a full-stack developer with over 5 years of experience, specialized in PHP, Laravel, JavaScript, React, Node.js, and other technologies. I am passionate about building scalable, intuitive, and high-performance applications.",
+
+  "skills_title": "Skills",
+  "skills_description": "Proficient in a wide range of technologies and tools to deliver robust and high-quality web solutions.",
+
+	"projects_title": "Projects",
+  "projects_description": "Check out some of my recent projects. For more details, visit my GitHub profile.",
+  "projects": {
+    "project1": {
+      "name": "TaskForge",
+      "description": "Task manager for productivity and team collaboration."
+    },
+    "project2": {
+      "name": "Cinemate",
+      "description": "Cinema ticket purchasing application with seat selection."
+    },
+    "project3": {
+      "name": "Pass-In",
+      "description": "Event management platform for organizers and attendees."
+    },
+    "project4": {
+      "name": "AngolaHolidayAPI",
+      "description": "Public API for holidays in Angola."
+    },
+    "project5": {
+      "name": "IPIZ",
+      "description": "School management system for academic and administrative tasks."
+    },
+    "project6": {
+      "name": "Rest Countries API",
+      "description": "RESTful API providing information about countries worldwide."
+    },
+    "project7": {
+      "name": "Project 7",
+      "description": "Project 7 description."
+    },
+    "project8": {
+      "name": "Project 8",
+      "description": "Project 8 description."
+    }
+  },
+
+  "experience_title": "Professional Experience",
+  "experience_description": "Companies and organizations where I contributed my knowledge and skills.",
+  
+  "experiences": {
+    "experience1": {
+      "position": "Senior Full-Stack Developer",
+      "description": "Led the development of scalable web applications using React, Node.js and PHP. Responsible for system architecture and optimization."
+    },
+    "experience2": {
+      "position": "Full-Stack Developer", 
+      "description": "Developed innovative solutions for diverse clients, working with modern technologies and agile methodologies."
+    },
+    "experience3": {
+      "position": "Junior Developer",
+      "description": "Started my career contributing to dynamic web projects and learning development best practices."
+    }
+  },
+
+  "footer": {
+    "contact_title": "Contact",
+    "contact_description": "I would be glad to hear from you! Feel free to reach out for questions, proposals, or partnerships.",
+    "name_label": "Name",
+    "email_label": "Email",
+    "message_label": "Message",
+    "send_message_button": "Send Message",
+    "name_placeholder": "John Doe",
+    "email_placeholder": "john@example.com",
+    "message_placeholder": "Type your message..."
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "home": "Início",
+  "about": "Sobre",
+  "skills": "Competências",
+  "projects": "Projetos",
+  "contact": "Contato",
+  "welcome_message": "Bem-vindo ao meu portfólio profissional",
+
+  "home_title": "Manuel Ventura",
+  "home_subtitle": "Desenvolvedor Full-Stack",
+  "home_description": "Desenvolvedor full-stack com experiência em aplicações web modernas, focado em soluções inovadoras e eficientes para desafios reais.",
+  "download_resume": "Baixar Currículo",
+
+  "about_title": "Sobre Mim",
+  "about_description": "Sou desenvolvedor full-stack com mais de 5 anos de experiência, especializado em PHP, Laravel, JavaScript, React, Node.js e outras tecnologias. Tenho paixão por criar aplicações escaláveis, intuitivas e de alto desempenho.",
+
+  "skills_title": "Competências",
+  "skills_description": "Domínio de diversas tecnologias e ferramentas para entregar soluções web robustas e de alta qualidade.",
+
+  "projects_title": "Projetos",
+  "projects_description": "Confira alguns dos meus projetos recentes. Para mais detalhes, acesse meu perfil no GitHub.",
+  "projects": {
+    "project1": {
+      "name": "TaskForge",
+      "description": "Gestor de tarefas para produtividade e colaboração em equipe."
+    },
+    "project2": {
+      "name": "Cinemate",
+      "description": "Aplicação para compra de bilhetes de cinema com seleção de assentos."
+    },
+    "project3": {
+      "name": "Pass-In",
+      "description": "Plataforma de gestão de eventos para organizadores e participantes."
+    },
+    "project4": {
+      "name": "AngolaHolidayAPI",
+      "description": "API pública de feriados em Angola."
+    },
+    "project5": {
+      "name": "IPIZ",
+      "description": "Sistema de gestão escolar para tarefas acadêmicas e administrativas."
+    },
+    "project6": {
+      "name": "Rest Countries API",
+      "description": "API RESTful que fornece informações sobre países do mundo."
+    },
+    "project7": {
+      "name": "Projecto 7",
+      "description": "Descrição do Projeto 7."
+    },
+    "project8": {
+      "name": "Projecto 8",
+      "description": "Descrição do Projeto 8."
+    }
+  },
+
+  "experience_title": "Experiência Profissional",
+  "experience_description": "Empresas e organizações onde contribuí com meu conhecimento e habilidades.",
+  
+  "experiences": {
+    "experience1": {
+      "position": "Desenvolvedor Full-Stack Sênior",
+      "description": "Liderei o desenvolvimento de aplicações web escaláveis usando React, Node.js e PHP. Responsável pela arquitetura e otimização de sistemas."
+    },
+    "experience2": {
+      "position": "Desenvolvedor Full-Stack",
+      "description": "Desenvolvi soluções inovadoras para clientes diversos, trabalhando com tecnologias modernas e metodologias ágeis."
+    },
+    "experience3": {
+      "position": "Desenvolvedor Junior",
+      "description": "Iniciei minha carreira contribuindo para projetos web dinâmicos e aprendendo as melhores práticas de desenvolvimento."
+    }
+  },
+
+  "footer": {
+    "contact_title": "Contacto",
+    "contact_description": "Será um prazer conversar com você! Entre em contato para dúvidas, propostas ou parcerias.",
+    "name_label": "Nome",
+    "email_label": "E-mail",
+    "message_label": "Mensagem",
+    "send_message_button": "Enviar Mensagem",
+    "name_placeholder": "João Silva",
+    "email_placeholder": "joao@exemplo.com",
+    "message_placeholder": "Digite sua mensagem..."
+  }
+}

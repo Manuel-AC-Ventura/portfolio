@@ -1,0 +1,44 @@
+{
+  "projects": [
+    {
+      "key": "project1",
+      "cover": "./projects/TaskForge.png",
+      "url": "https://github.com/Manuel-AC-Ventura/TaskForge"
+    },
+    {
+      "key": "project2",
+      "cover": "./projects/Cinemate.png",
+      "url": "https://github.com/Manuel-AC-Ventura/Cinemate"
+    },
+    {
+      "key": "project3",
+      "cover": "./projects/Pass-In.png",
+      "url": "https://github.com/Manuel-AC-Ventura/pass-in-web"
+    },
+    {
+      "key": "project4",
+      "cover": "placeholder.svg",
+      "url": "https://github.com/Manuel-AC-Ventura/AngolaHolidayAPI"
+    },
+    {
+      "key": "project5",
+      "cover": "./projects/IPIZ.png",
+      "url": "https://github.com/Manuel-AC-Ventura/IPIZ"
+    },
+    {
+      "key": "project6",
+      "cover": "./projects/rest-countries-api.png",
+      "url": "https://github.com/DevStartGame/rest-countries-api"
+    },
+    {
+      "key": "project7",
+      "cover": "placeholder.svg",
+      "url": "https://example.com/project7"
+    },
+    {
+      "key": "project8",
+      "cover": "placeholder.svg",
+      "url": "https://example.com/project8"
+    }
+  ]
+}
